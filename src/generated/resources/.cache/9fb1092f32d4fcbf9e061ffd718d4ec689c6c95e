@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-03T07:10:15.432374138	Recipes
+// 1.21.1	2026-09-12T15:21:26.922412299	Recipes
 bdf4c4581a3355595e7111d200949e6527c51b39 data/farmersdelight/recipe/cutting/canopy_log.json
 5349a20a7d41bdb802466dc073459e1e783a9d77 data/farmersdelight/recipe/cutting/canopy_wood.json
 57f863af656e2b8bdab93c734a77d506f9078906 data/farmersdelight/recipe/cutting/dark_log.json
@@ -43,7 +43,7 @@ d4b06ad63d09cca043dd20a231f463b9180ff553 data/twilitgourmet/advancement/recipes/
 2df8c1da0dce21f04ccd08f0cc8ebafc1a714511 data/twilitgourmet/advancement/recipes/cooking/crab_cakes.json
 1bea9768aa5b05d4ab0e1bf2b01d032d066df913 data/twilitgourmet/advancement/recipes/cooking/crab_quiche.json
 0d4e0f028bf555b6c605477f8a5425d32285e2a8 data/twilitgourmet/advancement/recipes/cooking/fiddlehead_risotto.json
-0260570a605a3d9bd489366f78b4f5e6e4f986a6 data/twilitgourmet/advancement/recipes/cooking/goulash.json
+55ddf13281e155604c5eb630369c9ea20a5bd1ad data/twilitgourmet/advancement/recipes/cooking/goulash.json
 f215fb47cd089016225f52d1265d853455e36e7b data/twilitgourmet/advancement/recipes/cooking/mushgloom_stew.json
 43a5d2a0ada3ca66cd0b7d1751a069cfa073e0bb data/twilitgourmet/advancement/recipes/cooking/venison_and_root_veggies.json
 c1c13103381d56355bfb34edcc69cc905eddc392 data/twilitgourmet/advancement/recipes/decorations/canopy_cabinet.json
@@ -99,7 +99,7 @@ c72e1ed1e32e75e9d42c6129630e4c74f0eae102 data/twilitgourmet/recipe/cooked_boarkc
 d73008caa9e802dc217369f953e3b415a40e785f data/twilitgourmet/recipe/cooking/crab_cakes.json
 78f8fd8d1ce1decf37d70002ccdfb4d89644fe2e data/twilitgourmet/recipe/cooking/crab_quiche.json
 8f4660dca07e9399f7fde827da5c22aca823500e data/twilitgourmet/recipe/cooking/fiddlehead_risotto.json
-a058f6d3ef8ccdfc3821953b27ffd996777ea05b data/twilitgourmet/recipe/cooking/goulash.json
+0d317656dd0bbc2a382bdf8cd3014eb4a0c46d68 data/twilitgourmet/recipe/cooking/goulash.json
 c70cd3e82dd0fa519ea364deedb3ac9485d5f0d8 data/twilitgourmet/recipe/cooking/mushgloom_stew.json
 7a9610e76397a0ce102ac694934d188813231bcf data/twilitgourmet/recipe/cooking/venison_and_root_veggies.json
 53482e9c32b581d290dbc4b47df8ce10f2ee3974 data/twilitgourmet/recipe/crab_jerky.json

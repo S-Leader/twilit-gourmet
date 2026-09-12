@@ -29,7 +29,6 @@ import twilightforest.init.TFItems;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.CommonTags;
-import vectorwing.farmersdelight.common.tag.ModTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 import vectorwing.farmersdelight.data.recipe.CookingRecipes;
@@ -153,10 +152,10 @@ public class RecipeGenerator extends RecipeProvider {
 		CookingPotRecipeBuilder.cookingPotRecipe(GourmetItems.GOULASH, 1, CookingRecipes.SLOW_COOKING, CookingRecipes.LARGE_EXP)
 				.addIngredient(Ingredient.of(GourmetItems.GROUND_VENISON, GourmetItems.MINCED_MEEF))
 				.addIngredient(CommonTags.Items.CROPS_ONION)
-				.addIngredient(DataComponentIngredient.of(false, DataComponentPredicate.builder().expect(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER)).build(), Items.POTION))
+				.addIngredient(ModItems.BONE_BROTH.get())
 				.addIngredient(ModItems.TOMATO_SAUCE.get())
 				.addIngredient(CommonTags.Items.FOODS_PASTA)
-				.unlockedByAnyIngredient(GourmetItems.GROUND_VENISON, GourmetItems.MINCED_MEEF, ModItems.RAW_PASTA.get(), ModItems.TOMATO_SAUCE.get())
+				.unlockedByAnyIngredient(GourmetItems.GROUND_VENISON, GourmetItems.MINCED_MEEF, ModItems.RAW_PASTA.get(), ModItems.TOMATO_SAUCE.get(), ModItems.BONE_BROTH.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
 				.save(output);
 
