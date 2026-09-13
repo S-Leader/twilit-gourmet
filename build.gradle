@@ -152,6 +152,9 @@ dependencies {
     implementation "team-twilight:twilightforest:${project.tf_version}:universal"
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    implementation "curse.maven:advanced-core-info-1661923:8759953"
+    implementation "curse.maven:advanced-loot-info-1205426:8759960"
 }
 
 processResources {

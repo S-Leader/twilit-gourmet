@@ -21,6 +21,12 @@
     "twilitgourmet:crab_shell_fragment": {
       "chance": 0.3
     },
+    "twilitgourmet:fiddlehead": {
+      "chance": 0.5
+    },
+    "twilitgourmet:fiddlehead_spores": {
+      "chance": 0.3
+    },
     "twilitgourmet:giant_apple": {
       "chance": 1.0
     },

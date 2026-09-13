@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "twilitgourmet:sauteed_fiddlehead_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sauteed_fiddlehead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "twilitgourmet:fiddlehead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "sauteed_fiddlehead"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "twilitgourmet:sauteed_fiddlehead_from_smoking"
+    ]
+  }
+}

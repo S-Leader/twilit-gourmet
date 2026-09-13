@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-03T07:02:59.963091902	Item Models: twilitgourmet
+// 1.21.1	2026-09-13T08:31:24.440671896	Item Models: twilitgourmet
 90d7154e9f31fb772e22fe4a7e2dff9c2dd50276 assets/twilitgourmet/models/item/apple_slice.json
 438db127c10f9d7d108d79a2011f8140381c59ea assets/twilitgourmet/models/item/berry_smoothie.json
 f7ef3fcded7330d1b52bef7c59d31d02bbbd663f assets/twilitgourmet/models/item/boarkchop.json
@@ -17,12 +17,15 @@ ec19d4f39792eaf0a6cfe8ae577087a54450c1e5 assets/twilitgourmet/models/item/crab_m
 07406b09821700a8ef3e7450890516a36fe651fd assets/twilitgourmet/models/item/crab_shell_fragment.json
 1f209dad6a3685e0e3abb9be088f85fef839e456 assets/twilitgourmet/models/item/cremeschnitte.json
 21e362d4f1bb5b280e57537a95530122e7c9737e assets/twilitgourmet/models/item/cremeschnitte_slice.json
+7a641c1894e25d0c1cfd48db546ab2ae975f0fce assets/twilitgourmet/models/item/fiddlehead.json
 68cfc551d0c4ab3618e7acf31a646d3c5ac986a9 assets/twilitgourmet/models/item/fiddlehead_risotto.json
+781ca5f4ca7eccb02d498fac2d6856102185d247 assets/twilitgourmet/models/item/fiddlehead_spores.json
 4bf750efd6a5943f3302fc6c589f86312e330678 assets/twilitgourmet/models/item/fiery_knife.json
 e88e3c0f9af8a8adaf8b58fa948b36aa52a05397 assets/twilitgourmet/models/item/giant_apple.json
 7852c444b1e8a1a3df91a0c517c67dc31e1940f6 assets/twilitgourmet/models/item/goulash.json
 60f69c574cf1fce43cea569d80a852050491c1bc assets/twilitgourmet/models/item/ground_venison.json
 ea34da6ae771f99fa5abf31ed29a5170d5bcb14e assets/twilitgourmet/models/item/ice_knife.json
+3e9e5524f8b6bc1d49f24128a6b0c477a3ec38b2 assets/twilitgourmet/models/item/ironwood_fiddlehead.json
 6f9a367c371c64c07d917ef2e3ae18e7eec30bbd assets/twilitgourmet/models/item/ironwood_knife.json
 73b398ce8d85f2a1ca5e0bb3eeafbdb768063ef3 assets/twilitgourmet/models/item/knightmetal_knife.json
 843784cf0d5cc2e3700271f0126d0366d0dcf267 assets/twilitgourmet/models/item/maze_cheesecake.json
@@ -34,6 +37,7 @@ eb57733826739f3f0eb16ac809671d99ccfd91f4 assets/twilitgourmet/models/item/mushgl
 9f90982992eb68d3a48d891b09e4a6577c52de35 assets/twilitgourmet/models/item/mushgloom_stew.json
 e85faff20e4959da3a5fecd13dc4a69572ed8987 assets/twilitgourmet/models/item/pancake.json
 0576407a18881b9aaba29efbebc905a40d2cb0d9 assets/twilitgourmet/models/item/pancake_stack.json
+03274ba1c8fa63ccb5f0312878af433fdbd5e85e assets/twilitgourmet/models/item/sauteed_fiddlehead.json
 286cf5761f6c4c64c7a54eeae4a3f5b1a77a22cb assets/twilitgourmet/models/item/shell_helmet.json
 b4a911d13362809c352030c4e04d02980b023fb1 assets/twilitgourmet/models/item/steeleaf_knife.json
 d3c390c2e1eda00f33a81aea194fc0d1e4882ab3 assets/twilitgourmet/models/item/syrup_bottle.json

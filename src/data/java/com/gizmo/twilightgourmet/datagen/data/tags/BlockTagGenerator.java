@@ -30,7 +30,8 @@ public class BlockTagGenerator extends BlockTagsProvider {
 				GourmetBlocks.TIME_CABINET.get(),
 				GourmetBlocks.TRANSFORMATION_CABINET.get(),
 				GourmetBlocks.MINING_CABINET.get(),
-				GourmetBlocks.SORTING_CABINET.get());
+				GourmetBlocks.SORTING_CABINET.get(),
+				GourmetBlocks.FIDDLEHEAD.get());
 
 		this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
 				GourmetBlocks.TREE_TAPPER.get(),
@@ -42,6 +43,8 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
 		this.tag(BlockTags.REPLACEABLE).add(GourmetBlocks.BREADCRUMBS.get());
 		this.tag(BlockTags.REPLACEABLE_BY_TREES).add(GourmetBlocks.BREADCRUMBS.get());
+		this.tag(BlockTags.MAINTAINS_FARMLAND).add(GourmetBlocks.FIDDLEHEAD.get());
+		this.tag(BlockTags.CROPS).add(GourmetBlocks.FIDDLEHEAD.get());
 
 		//FD tags
 		this.tag(ModTags.Blocks.FEASTS).add(

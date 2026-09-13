@@ -28,6 +28,9 @@ public record MiscLootTables(HolderLookup.Provider registries) implements LootTa
 				.add(LootItem.lootTableItem(GourmetItems.ICE_KNIFE).apply(EnchantRandomlyFunction.randomApplicableEnchantment(this.registries)))
 				.add(EmptyLootItem.emptyItem().setWeight(15))));
 
+		output.accept(GourmetLootTables.GROVE_INJECTION, LootTable.lootTable().withPool(LootPool.lootPool()
+				.add(LootItem.lootTableItem(GourmetItems.IRONWOOD_FIDDLEHEAD))));
+
 		output.accept(GourmetLootTables.STRONGHOLD_INJECTION, LootTable.lootTable().withPool(LootPool.lootPool()
 				.add(LootItem.lootTableItem(GourmetItems.KNIGHTMETAL_KNIFE).setWeight(3))
 				.add(LootItem.lootTableItem(GourmetItems.KNIGHTMETAL_KNIFE).apply(EnchantRandomlyFunction.randomApplicableEnchantment(this.registries)))

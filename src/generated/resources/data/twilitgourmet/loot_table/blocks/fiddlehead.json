@@ -1,0 +1,266 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "twilitgourmet:fiddlehead",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "variant": "single"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "twilitgourmet:fiddlehead",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "3"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 3.0,
+                        "min": 1.0
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "twilitgourmet:fiddlehead"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "twilitgourmet:fiddlehead_spores"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "twilitgourmet:fiddlehead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:binomial_with_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "extra": 3,
+                    "probability": 0.5714286
+                  }
+                }
+              ],
+              "name": "twilitgourmet:fiddlehead_spores"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "twilitgourmet:fiddlehead",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "variant": "upper"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "offsetY": -1,
+          "predicate": {
+            "block": {
+              "blocks": "twilitgourmet:fiddlehead",
+              "state": {
+                "variant": "lower"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "twilitgourmet:fiddlehead",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "3"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 5.0,
+                        "min": 3.0
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "twilitgourmet:fiddlehead"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "twilitgourmet:fiddlehead_spores"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "twilitgourmet:fiddlehead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:binomial_with_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "extra": 3,
+                    "probability": 0.5714286
+                  }
+                }
+              ],
+              "name": "twilitgourmet:fiddlehead_spores"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "twilitgourmet:fiddlehead",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "variant": "lower"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "offsetY": 1,
+          "predicate": {
+            "block": {
+              "blocks": "twilitgourmet:fiddlehead",
+              "state": {
+                "variant": "upper"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "twilitgourmet:fiddlehead",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "3"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "max": 5.0,
+                        "min": 3.0
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "twilitgourmet:fiddlehead"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "twilitgourmet:fiddlehead_spores"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "twilitgourmet:fiddlehead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:binomial_with_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "extra": 3,
+                    "probability": 0.5714286
+                  }
+                }
+              ],
+              "name": "twilitgourmet:fiddlehead_spores"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "twilitgourmet:blocks/fiddlehead"
+}

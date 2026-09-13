@@ -9,6 +9,12 @@ public class GourmetFoods {
 
 	public static final FoodProperties APPLE_SLICE = new FoodProperties.Builder().nutrition(2).saturationModifier(0.1F).fast().build();
 	public static final FoodProperties PANCAKE = new FoodProperties.Builder().nutrition(3).build();
+	public static final FoodProperties FIDDLEHEAD = new FoodProperties.Builder().nutrition(1).effect(() -> new MobEffectInstance(MobEffects.POISON, 100, 1), 1.0F).effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 150), 1.0F).build();
+	public static final FoodProperties SAUTEED_FIDDLEHEAD = new FoodProperties.Builder().nutrition(4).saturationModifier(0.1F).build();
+	public static final FoodProperties IRONWOOD_FIDDLEHEAD = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2F)
+			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300, 1), 1.0F)
+			.effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 1), 1.0F)
+			.effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0), 1.0F).build();
 	public static final FoodProperties SYRUP_BOTTLE = new FoodProperties.Builder().saturationModifier(0.3F).alwaysEdible().build();
 	public static final FoodProperties RAW_BOARKCHOP = new FoodProperties.Builder().nutrition(4).saturationModifier(0.3F).build();
 	public static final FoodProperties COOKED_BOARKCHOP = new FoodProperties.Builder().nutrition(9).saturationModifier(0.85F).build();

@@ -33,6 +33,8 @@ public class ItemTagGenerator extends ItemTagsProvider {
 				TFItems.FIERY_PICKAXE.get()
 		);
 
+		this.tag(ItemTags.VILLAGER_PLANTABLE_SEEDS).add(GourmetItems.FIDDLEHEAD_SPORES.get());
+
 		this.tag(ItemTags.MEAT).add(
 				GourmetItems.RAW_BOARKCHOP.get(),
 				GourmetItems.COOKED_BOARKCHOP.get(),
@@ -41,6 +43,9 @@ public class ItemTagGenerator extends ItemTagsProvider {
 				GourmetItems.GROUND_VENISON.get(),
 				GourmetItems.VENISON_PATTY.get()
 		);
+
+		this.tag(Tags.Items.SEEDS).add(GourmetItems.FIDDLEHEAD_SPORES.get());
+		this.tag(Tags.Items.CROPS).add(GourmetItems.FIDDLEHEAD.get());
 
 		this.tag(ModTags.Items.SNACKS).add(
 				GourmetItems.VENISON_KEBAB.get(),
@@ -75,6 +80,7 @@ public class ItemTagGenerator extends ItemTagsProvider {
 
 		this.tag(Tags.Items.FOODS).add(GourmetItems.MAZE_WAFER_CRUST.get());
 		this.tag(Tags.Items.FOODS_FRUIT).add(GourmetItems.APPLE_SLICE.get());
+		this.tag(Tags.Items.FOODS_VEGETABLE).add(GourmetItems.FIDDLEHEAD.get(), GourmetItems.SAUTEED_FIDDLEHEAD.get());
 		this.tag(Tags.Items.FOODS_RAW_FISH).add(GourmetItems.CRAB_MEAT.get());
 		this.tag(Tags.Items.FOODS_COOKED_FISH).add(GourmetItems.COOKED_CRAB_MEAT.get());
 		this.tag(Tags.Items.FOODS_RAW_MEAT).add(GourmetItems.RAW_BOARKCHOP.get());

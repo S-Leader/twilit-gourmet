@@ -46,6 +46,10 @@ public class GourmetTabs {
 				output.accept(GourmetItems.RAW_BOARKCHOP);
 				output.accept(GourmetItems.COOKED_BOARKCHOP);
 
+				output.accept(GourmetItems.FIDDLEHEAD_SPORES);
+				output.accept(GourmetItems.FIDDLEHEAD);
+				output.accept(GourmetItems.SAUTEED_FIDDLEHEAD);
+				output.accept(GourmetBlocks.BREADCRUMBS);
 				output.accept(GourmetBlocks.BREADCRUMBS);
 				output.accept(GourmetItems.APPLE_SLICE);
 				output.accept(GourmetBlocks.GIANT_APPLE);

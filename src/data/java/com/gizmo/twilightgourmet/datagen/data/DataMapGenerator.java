@@ -28,9 +28,11 @@ public class DataMapGenerator extends DataMapProvider {
 		composting.add(GourmetBlocks.BREADCRUMBS.asItem().builtInRegistryHolder(), new Compostable(0.3F), false);
 		composting.add(GourmetBlocks.GIANT_APPLE.asItem().builtInRegistryHolder(), new Compostable(1.0F), false);
 		composting.add(GourmetBlocks.MUSHGLOOM_COLONY.asItem().builtInRegistryHolder(), new Compostable(1.0F), false);
+		composting.add(GourmetItems.FIDDLEHEAD_SPORES, new Compostable(0.3F), false);
 		composting.add(GourmetItems.CRAB_SHELL_FRAGMENT, new Compostable(0.3F), false);
 		composting.add(GourmetItems.CRAB_LEG, new Compostable(0.5F), false);
 		composting.add(GourmetItems.CRAB_CLAW, new Compostable(0.5F), false);
+		composting.add(GourmetItems.FIDDLEHEAD, new Compostable(0.5F), false);
 		composting.add(GourmetItems.APPLE_SLICE, new Compostable(0.65F), false);
 		composting.add(GourmetItems.MAZE_WAFER_CRUST, new Compostable(0.65F), false);
 		composting.add(GourmetItems.PANCAKE, new Compostable(0.65F), false);

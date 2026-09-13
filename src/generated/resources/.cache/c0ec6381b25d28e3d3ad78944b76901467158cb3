@@ -1,5 +1,6 @@
-// 1.21.1	2026-09-04T09:20:35.395007181	Global Loot Modifiers : twilitgourmet
-f5127079edf804c153f14d9402c5b4fcb2e8c89d data/neoforge/loot_modifiers/global_loot_modifiers.json
+// 1.21.1	2026-09-13T08:41:33.540526784	Global Loot Modifiers : twilitgourmet
+02ac0854314663bf2de28b95d639857ecdb9569e data/neoforge/loot_modifiers/global_loot_modifiers.json
+f38b163a0be871eda5cc3809ab6897a86b630be8 data/twilitgourmet/loot_modifiers/add_fiddlehead_to_dropper.json
 03f8c3aac6b6162cca6f011157bbcb48eaca2c94 data/twilitgourmet/loot_modifiers/add_giant_apple_to_leaves.json
 643c06d621b59720dd8789d092878589b50b94a8 data/twilitgourmet/loot_modifiers/add_ice_knives_to_aurora_palace.json
 69787fc6e49c9d1b45792092749404ad55023f10 data/twilitgourmet/loot_modifiers/add_knightmetal_knives_to_stronghold.json

@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
+import net.minecraft.world.level.storage.loot.entries.EntryGroup;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.*;
 import net.minecraft.world.level.storage.loot.predicates.*;
@@ -42,8 +43,8 @@ public class EntityLootTables extends EntityLootSubProvider {
 						//try rolling whole crab if killed with knife
 						.add(LootItem.lootTableItem(GourmetItems.WHOLE_CRAB)
 								.when(LootItemRandomChanceWithEnchantedBonusCondition.randomChanceAndLootingBoost(this.registries, 0.25F, 0.1F))
-								//if no crab, try rolling extra fragments or meat
-								.otherwise(AlternativesEntry.alternatives(
+								//if no crab, roll extra fragments and meat
+								.otherwise(EntryGroup.list(
 										LootItem.lootTableItem(GourmetItems.CRAB_SHELL_FRAGMENT)
 												.apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))
 												.apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))),

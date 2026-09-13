@@ -7,6 +7,7 @@ import com.gizmo.twilitgourmet.item.KnightmetalKnifeItem;
 import com.gizmo.twilitgourmet.item.SyrupBottleItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -47,6 +48,11 @@ public class GourmetItems {
 	public static final DeferredItem<Item> MAZE_CHEESECAKE_SLICE = ITEMS.register("maze_cheesecake_slice", () -> new ConsumableItem(new Item.Properties().food(FoodValues.PIE_SLICE)));
 	public static final DeferredItem<Item> CREMESCHNITTE = ITEMS.register("cremeschnitte", () -> new PlaceableItem(GourmetBlocks.CREMESCHNITTE.get(), new Item.Properties()));
 	public static final DeferredItem<Item> CREMESCHNITTE_SLICE = ITEMS.register("cremeschnitte_slice", () -> new ConsumableItem(new Item.Properties().food(FoodValues.PIE_SLICE)));
+
+	public static final DeferredItem<Item> FIDDLEHEAD_SPORES = ITEMS.register("fiddlehead_spores", () -> new ItemNameBlockItem(GourmetBlocks.FIDDLEHEAD.get(), new Item.Properties()));
+	public static final DeferredItem<Item> FIDDLEHEAD = ITEMS.register("fiddlehead", () -> new Item(new Item.Properties().food(GourmetFoods.FIDDLEHEAD)));
+	public static final DeferredItem<Item> SAUTEED_FIDDLEHEAD = ITEMS.register("sauteed_fiddlehead", () -> new Item(new Item.Properties().food(GourmetFoods.SAUTEED_FIDDLEHEAD)));
+	public static final DeferredItem<Item> IRONWOOD_FIDDLEHEAD = ITEMS.register("ironwood_fiddlehead", () -> new Item(new Item.Properties().food(GourmetFoods.IRONWOOD_FIDDLEHEAD)));
 
 	//crab things
 	public static final DeferredItem<Item> CRAB_SHELL_FRAGMENT = ITEMS.register("crab_shell_fragment", () -> new Item(new Item.Properties()));

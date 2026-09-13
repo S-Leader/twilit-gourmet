@@ -48,6 +48,7 @@ public class RecipeGenerator extends RecipeProvider {
 		foodSmeltingRecipes("meef_patty", GourmetItems.MINCED_MEEF, GourmetItems.MEEF_PATTY, 0.35F, output);
 		foodSmeltingRecipes("crab_meat", GourmetItems.CRAB_MEAT, GourmetItems.COOKED_CRAB_MEAT, 0.35F, output);
 		foodSmeltingRecipes("cooked_boarkchop", GourmetItems.RAW_BOARKCHOP, GourmetItems.COOKED_BOARKCHOP, 0.35F, output);
+		foodSmeltingRecipes("sauteed_fiddlehead", GourmetItems.FIDDLEHEAD, GourmetItems.SAUTEED_FIDDLEHEAD, 0.35F, output);
 
 		DryingRecipeBuilder.drying(GourmetItems.CRAB_MEAT, GourmetItems.CRAB_JERKY)
 				.unlockedBy("has_meat", has(GourmetItems.CRAB_MEAT))
@@ -169,11 +170,11 @@ public class RecipeGenerator extends RecipeProvider {
 				.save(output);
 
 		CookingPotRecipeBuilder.cookingPotRecipe(GourmetItems.FIDDLEHEAD_RISOTTO, 1, CookingRecipes.NORMAL_COOKING, CookingRecipes.MEDIUM_EXP)
-				.addIngredient(TFBlocks.FIDDLEHEAD, 3)
+				.addIngredient(GourmetItems.FIDDLEHEAD, 3)
 				.addIngredient(CommonTags.Items.CROPS_RICE)
 				.addIngredient(CommonTags.Items.CROPS_RICE)
 				.addIngredient(ModItems.BONE_BROTH.get())
-				.unlockedByAnyIngredient(TFBlocks.FIDDLEHEAD, ModItems.BONE_BROTH.get())
+				.unlockedByAnyIngredient(GourmetItems.FIDDLEHEAD, ModItems.BONE_BROTH.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
 				.save(output);
 

@@ -75,7 +75,7 @@
               "name": "twilitgourmet:whole_crab"
             },
             {
-              "type": "minecraft:alternatives",
+              "type": "minecraft:group",
               "children": [
                 {
                   "type": "minecraft:item",

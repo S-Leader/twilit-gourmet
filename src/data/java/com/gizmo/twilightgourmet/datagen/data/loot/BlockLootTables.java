@@ -1,24 +1,33 @@
 package com.gizmo.twilightgourmet.datagen.data.loot;
 
+import com.gizmo.twilitgourmet.block.FiddleheadCropBlock;
 import com.gizmo.twilitgourmet.block.GiantAppleBlock;
 import com.gizmo.twilitgourmet.block.PancakeStackBlock;
 import com.gizmo.twilitgourmet.init.GourmetBlocks;
 import com.gizmo.twilitgourmet.init.GourmetItems;
+import net.minecraft.advancements.critereon.BlockPredicate;
+import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.advancements.critereon.LocationPredicate;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
+import net.minecraft.world.level.storage.loot.entries.EntryGroup;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.predicates.AnyOfCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.*;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.common.ItemAbilities;
@@ -26,12 +35,18 @@ import net.neoforged.neoforge.common.loot.CanItemPerformAbility;
 import twilightforest.init.TFBlocks;
 import vectorwing.farmersdelight.common.block.FeastBlock;
 import vectorwing.farmersdelight.common.block.MushroomColonyBlock;
+import vectorwing.farmersdelight.common.item.KnifeItem;
+import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class BlockLootTables extends BlockLootSubProvider {
+
+	protected static final LootItemCondition.Builder HAS_SHEARS = CanItemPerformAbility.canItemPerformAbility(ItemAbilities.SHEARS_HARVEST);
+
 	public BlockLootTables(HolderLookup.Provider registries) {
 		super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
 	}
@@ -110,6 +125,55 @@ public class BlockLootTables extends BlockLootSubProvider {
 		this.add(GourmetBlocks.CREMESCHNITTE.get(), LootTable.lootTable());
 		this.add(GourmetBlocks.CRAB_QUICHE.get(), LootTable.lootTable());
 		this.dropWhenSilkTouch(GourmetBlocks.BREADCRUMBS.get());
+
+		this.add(GourmetBlocks.FIDDLEHEAD.get(), block -> {
+			var fullyGrown = LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.AGE, 3));
+			return this.applyExplosionDecay(block, LootTable.lootTable()
+					//single variant
+					.withPool(LootPool.lootPool().add(EntryGroup.list(
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD)
+											.apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
+											.when(fullyGrown)
+											.otherwise(LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)),
+
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)
+											.when(fullyGrown)
+											.apply(ApplyBonusCount.addBonusBinomialDistributionCount(this.registries.holderOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))
+							.when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.VARIANT, FiddleheadCropBlock.Variant.SINGLE))))
+					//upper half broken
+					.withPool(LootPool.lootPool().add(EntryGroup.list(
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD)
+											.apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 5.0F)))
+											.when(fullyGrown)
+											.otherwise(LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)),
+
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)
+											.when(fullyGrown)
+											.apply(ApplyBonusCount.addBonusBinomialDistributionCount(this.registries.holderOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))
+							.when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.VARIANT, FiddleheadCropBlock.Variant.UPPER)))
+							.when(LocationCheck.checkLocation(LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(block)
+									.setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.VARIANT, FiddleheadCropBlock.Variant.LOWER))
+							), new BlockPos(0, -1, 0))))
+					//lower half broken
+					.withPool(LootPool.lootPool().add(EntryGroup.list(
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD)
+											.apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 5.0F)))
+											.when(fullyGrown)
+											.otherwise(LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)),
+
+									LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES)
+											.when(fullyGrown)
+											.apply(ApplyBonusCount.addBonusBinomialDistributionCount(this.registries.holderOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))))
+							.when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.VARIANT, FiddleheadCropBlock.Variant.LOWER)))
+							.when(LocationCheck.checkLocation(LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(block)
+									.setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FiddleheadCropBlock.VARIANT, FiddleheadCropBlock.Variant.UPPER))
+							), new BlockPos(0, 1, 0)))));
+		});
+
+		this.add(TFBlocks.FIDDLEHEAD.get(), block -> this.applyExplosionDecay(block, LootTable.lootTable()
+				.withPool(LootPool.lootPool().add(LootItem.lootTableItem(block).when(HAS_SHEARS)))
+				.withPool(LootPool.lootPool().add(LootItem.lootTableItem(GourmetItems.FIDDLEHEAD_SPORES).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))))
+						.when(CanItemPerformAbility.canItemPerformAbility(KnifeItem.KNIFE_HARVEST)))));
 	}
 
 	protected void dropNamedContainer(Block block) {
@@ -147,6 +211,6 @@ public class BlockLootTables extends BlockLootSubProvider {
 
 	@Override
 	protected Iterable<Block> getKnownBlocks() {
-		return GourmetBlocks.BLOCKS.getEntries().stream().map(Supplier::get).collect(Collectors.toList());
+		return Stream.concat(Stream.of(TFBlocks.FIDDLEHEAD.get()), GourmetBlocks.BLOCKS.getEntries().stream().map(Supplier::get)).collect(Collectors.toList());
 	}
 }

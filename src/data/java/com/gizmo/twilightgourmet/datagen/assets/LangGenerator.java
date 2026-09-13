@@ -12,6 +12,7 @@ import net.neoforged.neoforge.common.data.LanguageProvider;
 import twilightforest.TwilightForestMod;
 import twilightforest.data.helpers.LangConversionHelper;
 import twilightforest.data.helpers.LangFormatSplitter;
+import twilightforest.init.TFBlocks;
 
 import java.util.HashMap;
 import java.util.List;
@@ -50,6 +51,7 @@ public class LangGenerator extends LanguageProvider {
 		this.addBlock(GourmetBlocks.MAZE_CHEESECAKE, "Maze Cheesecake");
 		this.addBlock(GourmetBlocks.CREMESCHNITTE, "Cremeschnitte");
 		this.addBlock(GourmetBlocks.BREADCRUMBS, "Breadcrumbs");
+		this.addBlock(GourmetBlocks.FIDDLEHEAD, "Cultivated Fiddlehead");
 
 		this.addItem(GourmetItems.APPLE_SLICE, "Apple Slice");
 		this.addItem(GourmetItems.IRONWOOD_KNIFE, "Ironwood Knife");
@@ -59,6 +61,11 @@ public class LangGenerator extends LanguageProvider {
 		this.addItem(GourmetItems.FIERY_KNIFE, "Fiery Knife");
 		this.add("item.twilitgourmet.fiery_knife.desc", "Burns targets");
 		this.addItem(GourmetItems.ICE_KNIFE, "Ice Knife");
+
+		this.addItem(GourmetItems.FIDDLEHEAD_SPORES, "Fiddlehead Spores");
+		this.addItem(GourmetItems.FIDDLEHEAD, "Fiddlehead");
+		this.addItem(GourmetItems.SAUTEED_FIDDLEHEAD, "Sautéed Fiddlehead");
+		this.addItem(GourmetItems.IRONWOOD_FIDDLEHEAD, "Ironwood Fiddlehead");
 
 		this.addItem(GourmetItems.PANCAKE, "Pancake");
 		this.addItem(GourmetItems.GROUND_VENISON, "Ground Venison");

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "twilitgourmet:ironwood_fiddlehead"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "twilitgourmet:injection/quest_grove"
+}

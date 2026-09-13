@@ -72,6 +72,11 @@ public class ItemModelGenerator extends ItemModelProvider {
 		//the item texture uses the old coloring so it doesnt look really dark in the inventory
 		this.singleTex(GourmetItems.MUSHGLOOM_COLONY);
 
+		this.singleTex(GourmetItems.FIDDLEHEAD);
+		this.singleTex(GourmetItems.FIDDLEHEAD_SPORES);
+		this.singleTex(GourmetItems.SAUTEED_FIDDLEHEAD);
+		this.singleTex(GourmetItems.IRONWOOD_FIDDLEHEAD);
+
 		this.basicItem(GourmetBlocks.BREADCRUMBS.asItem());
 		this.basicItem(GourmetBlocks.TREE_TAPPER.asItem());
 

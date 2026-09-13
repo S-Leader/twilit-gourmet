@@ -41,6 +41,7 @@ public class GourmetBlocks {
 	public static final DeferredBlock<Block> MUSHGLOOM_COLONY = BLOCKS.register("mushgloom_colony", () -> new MushgloomColonyBlock(BlockBehaviour.Properties.ofFullCopy(TFBlocks.MUSHGLOOM.get()).randomTicks()));
 
 	//new stuff
+	public static final DeferredBlock<Block> FIDDLEHEAD = BLOCKS.register("fiddlehead", () -> new FiddleheadCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 	public static final DeferredBlock<Block> BREADCRUMBS = register("breadcrumbs", () -> new BreadcrumbBlock(BlockBehaviour.Properties.of().replaceable().noCollission().noOcclusion().mapColor(MapColor.TERRACOTTA_BROWN).pushReaction(PushReaction.DESTROY).sound(SoundType.ROOTS)));
 	public static final DeferredBlock<Block> GIANT_APPLE = register("giant_apple", () -> new GiantAppleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).strength(2.0F, 10.0F).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOL)));
 	public static final DeferredBlock<Block> TREE_TAPPER = register("tree_tapper", () -> new TreeTapperBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).strength(2.0F, 10.0F).randomTicks().sound(SoundType.METAL)));

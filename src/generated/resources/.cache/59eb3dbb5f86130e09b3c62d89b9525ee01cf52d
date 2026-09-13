@@ -1,6 +1,7 @@
-// 1.21.1	2026-09-04T09:22:21.027510268	Loot Tables
+// 1.21.1	2026-09-13T08:44:01.699202205	Loot Tables
+d07cefec2c949b17f73736b32738dc6c671c87d5 data/twilightforest/loot_table/blocks/fiddlehead.json
 18e7d4aeed1fd0f4e9944d011268c8f7cda81a7c data/twilightforest/loot_table/entities/boar.json
-cb4abd984e93c771cdc4f912c099bdfa0c4a3e08 data/twilightforest/loot_table/entities/helmet_crab.json
+8a990df2a608ca5fada6d9727b871f2d7012f1d5 data/twilightforest/loot_table/entities/helmet_crab.json
 0f31a7bb2069189939b4763b8004d51a8ad0dfa7 data/twilitgourmet/loot_table/blocks/breadcrumbs.json
 0b2b350d2581ea248e5f71f137a0d275d694885c data/twilitgourmet/loot_table/blocks/canopy_cabinet.json
 5717cdcd5aa1b4e5f1573ec006d4471cb211566e data/twilitgourmet/loot_table/blocks/cooked_crab.json
@@ -8,6 +9,7 @@ ba1dcfee9dab1d908f14af2af13c29826fb43a04 data/twilitgourmet/loot_table/blocks/cr
 af38413115eabd2a51c25f5a6f9fc341f2b8da3b data/twilitgourmet/loot_table/blocks/crab_quiche.json
 4a806d37fbcbc05847ae0772ac00902271f9e038 data/twilitgourmet/loot_table/blocks/cremeschnitte.json
 da60d054e3b77bbc6a6043076d82784158179556 data/twilitgourmet/loot_table/blocks/dark_cabinet.json
+f087fa82d2f07610ed5dc0f7b6492c5f671ef19b data/twilitgourmet/loot_table/blocks/fiddlehead.json
 a378cd15a72fb69be840b814c273912c9ad6ccc9 data/twilitgourmet/loot_table/blocks/giant_apple.json
 44109eac42f76e039995da9c6c7652f4c7e4d0d5 data/twilitgourmet/loot_table/blocks/mangrove_cabinet.json
 3dcdf99ba4aacb0986884fe5b569951f3add3f85 data/twilitgourmet/loot_table/blocks/maze_cheesecake.json
@@ -22,5 +24,6 @@ cf446eabaf7d3db8e3bd3a736a556f48faa19ca6 data/twilitgourmet/loot_table/blocks/ti
 1fd916189e3483a5d49cf25c6489502e55e49aae data/twilitgourmet/loot_table/blocks/twilight_oak_cabinet.json
 b6a32eae63f5f10443475c1348d97ce89ec34554 data/twilitgourmet/loot_table/injection/aurora_palace.json
 9563421c2c281f9de35e6d350c25a891130ac891 data/twilitgourmet/loot_table/injection/giant_apple.json
+9c2de8023635dfb485f6d045f46ae45c85311493 data/twilitgourmet/loot_table/injection/quest_grove.json
 5ac661035d0c09630b8ff7d69c9da759ac72112e data/twilitgourmet/loot_table/injection/stonghold.json
 20ac66dcf00cb0fa0542dfa0e9d205cef98906e8 data/twilitgourmet/loot_table/injection/structure_seeds.json

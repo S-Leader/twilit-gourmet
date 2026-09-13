@@ -51,6 +51,7 @@ public class LootModifierGenerator extends GlobalLootModifierProvider {
 		this.add("add_giant_apple_to_leaves", new AddTableLootModifier(new LootItemCondition[]{LootTableIdCondition.builder(TwilightForestMod.prefix("blocks/giant_leaves")).build()}, GourmetLootTables.GIANT_APPLE));
 		this.add("add_ice_knives_to_aurora_palace", this.addNewLootPool(TFLootTables.AURORA_ROOM, GourmetLootTables.AURORA_PALACE_INJECTION));
 		this.add("add_knightmetal_knives_to_stronghold", this.addNewLootPool(TFLootTables.STRONGHOLD_CACHE, GourmetLootTables.STRONGHOLD_INJECTION));
+		this.add("add_fiddlehead_to_dropper", this.addNewLootPool(TFLootTables.QUEST_GROVE, GourmetLootTables.GROVE_INJECTION));
 
 		this.add("add_seeds_to_druid_hut", this.addNewLootPool(TFLootTables.BASEMENT, GourmetLootTables.SEED_INJECTION));
 		this.add("add_seeds_to_hedge_maze", this.addNewLootPool(TFLootTables.HEDGE_MAZE, GourmetLootTables.SEED_INJECTION));

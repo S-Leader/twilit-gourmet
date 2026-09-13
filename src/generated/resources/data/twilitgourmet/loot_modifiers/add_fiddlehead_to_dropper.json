@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "twilightforest:quest_grove_dropper"
+    }
+  ],
+  "table": "twilitgourmet:injection/quest_grove"
+}
