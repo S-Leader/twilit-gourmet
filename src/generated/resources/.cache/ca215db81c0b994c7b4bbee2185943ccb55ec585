@@ -1,9 +1,9 @@
-// 1.21.1	2026-09-13T08:31:24.442128917	Tags for minecraft:item mod id twilitgourmet
+// 1.21.1	2026-09-14T10:54:57.444810341	Tags for minecraft:item mod id twilitgourmet
 673a742fb0cef48b9723507f62ba20283a039700 data/c/tags/item/crops.json
 1624c44d310afc336bb2f08f0cdafeb297267090 data/c/tags/item/foods.json
 aec98afd3de53547e22b1ccd52c49d5ef53765e6 data/c/tags/item/foods/cooked_beef.json
 7c64dc622b8583edbeb721a308e6c1eb20c6f5f9 data/c/tags/item/foods/cooked_fish.json
-4a27160fe887d6636671e89c0265e7dcd90cdda7 data/c/tags/item/foods/cooked_meat.json
+89c9c37dee9452dbf26c88cd7c9522580e2b61c1 data/c/tags/item/foods/cooked_meat.json
 4a27160fe887d6636671e89c0265e7dcd90cdda7 data/c/tags/item/foods/cooked_pork.json
 0f2507619666a0a8f7042b13749793939acdd2b4 data/c/tags/item/foods/edible_when_placed.json
 1624c44d310afc336bb2f08f0cdafeb297267090 data/c/tags/item/foods/food_poisoning.json
@@ -11,7 +11,7 @@ aec98afd3de53547e22b1ccd52c49d5ef53765e6 data/c/tags/item/foods/cooked_beef.json
 491095b5a0eaffb03ad3301352cbb6bc0ba45071 data/c/tags/item/foods/pie.json
 d4784512d86399658d9d72af9ae3c16375dde923 data/c/tags/item/foods/raw_beef.json
 d0ceb157edc86ade6a2f70a803da67a4c73eaa81 data/c/tags/item/foods/raw_fish.json
-9c566f3ae3dbd8f075b1acf19025a66edff5b45a data/c/tags/item/foods/raw_meat.json
+9adafbf99ab41b41d221a80881b795bf4a78b18c data/c/tags/item/foods/raw_meat.json
 9c566f3ae3dbd8f075b1acf19025a66edff5b45a data/c/tags/item/foods/raw_pork.json
 d0ceb157edc86ade6a2f70a803da67a4c73eaa81 data/c/tags/item/foods/safe_raw_fish.json
 8a1057e09d4e568b772c12f7b5fe0d94dc5ab63a data/c/tags/item/foods/soup.json

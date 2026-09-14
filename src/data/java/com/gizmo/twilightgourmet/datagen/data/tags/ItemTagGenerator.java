@@ -83,8 +83,8 @@ public class ItemTagGenerator extends ItemTagsProvider {
 		this.tag(Tags.Items.FOODS_VEGETABLE).add(GourmetItems.FIDDLEHEAD.get(), GourmetItems.SAUTEED_FIDDLEHEAD.get());
 		this.tag(Tags.Items.FOODS_RAW_FISH).add(GourmetItems.CRAB_MEAT.get());
 		this.tag(Tags.Items.FOODS_COOKED_FISH).add(GourmetItems.COOKED_CRAB_MEAT.get());
-		this.tag(Tags.Items.FOODS_RAW_MEAT).add(GourmetItems.RAW_BOARKCHOP.get());
-		this.tag(Tags.Items.FOODS_COOKED_MEAT).add(GourmetItems.COOKED_BOARKCHOP.get());
+		this.tag(Tags.Items.FOODS_RAW_MEAT).add(GourmetItems.RAW_BOARKCHOP.get(), GourmetItems.GROUND_VENISON.get(), GourmetItems.MINCED_MEEF.get());
+		this.tag(Tags.Items.FOODS_COOKED_MEAT).add(GourmetItems.COOKED_BOARKCHOP.get(), GourmetItems.VENISON_PATTY.get(), GourmetItems.MEEF_PATTY.get());
 		this.tag(Tags.Items.FOODS_FOOD_POISONING).add(GourmetItems.MAZE_WAFER_CRUST.get());
 		this.tag(Tags.Items.FOODS_EDIBLE_WHEN_PLACED).add(
 				GourmetItems.MAZE_CHEESECAKE.get(),

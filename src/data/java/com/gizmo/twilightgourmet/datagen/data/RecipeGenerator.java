@@ -60,7 +60,7 @@ public class RecipeGenerator extends RecipeProvider {
 				.addResultWithChance(GourmetItems.CRAB_MEAT, 0.5F, 2)
 				.addResultWithChance(GourmetItems.CRAB_SHELL_FRAGMENT, 0.75F, 2)
 				.save(output);
-		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(GourmetItems.RAW_BOARKCHOP), CuttingRecipes.KNIVES, ModItems.BACON.get(), 2).save(output);
+		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(GourmetItems.RAW_BOARKCHOP), CuttingRecipes.KNIVES, ModItems.BACON.get(), 3).save(output);
 		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(TFItems.STALE_BREAD), CuttingRecipes.KNIVES, GourmetBlocks.BREADCRUMBS, 3).save(output);
 
 		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(GourmetItems.CRAB_QUICHE), CuttingRecipes.KNIVES, GourmetItems.CRAB_QUICHE_SLICE, 4).save(output);
