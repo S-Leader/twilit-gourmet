@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "CuttingBoardBlockEntityMixin",
+    "DryingRackBlockEntityMixin",
     "RichSoilBlockMixin"
   ],
   "injectors": {

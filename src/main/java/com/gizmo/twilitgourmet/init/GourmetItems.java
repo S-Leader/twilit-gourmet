@@ -68,4 +68,17 @@ public class GourmetItems {
 	public static final DeferredItem<Item> CRAB_CAKE = ITEMS.register("crab_cake", () -> new ConsumableItem(new Item.Properties().food(GourmetFoods.CRAB_CAKE).stacksTo(16).craftRemainder(Items.BOWL)));
 	public static final DeferredItem<Item> CRAB_QUICHE = ITEMS.register("crab_quiche", () -> new PlaceableItem(GourmetBlocks.CRAB_QUICHE.get(), new Item.Properties()));
 	public static final DeferredItem<Item> CRAB_QUICHE_SLICE = ITEMS.register("crab_quiche_slice", () -> new ConsumableItem(new Item.Properties().food(FoodValues.PIE_SLICE)));
+
+	//cheesy
+	public static final DeferredItem<Item> PRESSED_CHEESE = ITEMS.register("pressed_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> ROTTEN_CHEESE = ITEMS.register("rotten_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> YOUNG_CHEESE = ITEMS.register("young_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> AGED_CHEESE = ITEMS.register("aged_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> MATURE_CHEESE = ITEMS.register("mature_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> YOUNG_SMOKED_CHEESE = ITEMS.register("young_smoked_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> AGED_SMOKED_CHEESE = ITEMS.register("aged_smoked_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> MATURE_SMOKED_CHEESE = ITEMS.register("mature_smoked_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> YOUNG_FUNKY_CHEESE = ITEMS.register("young_funky_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> AGED_FUNKY_CHEESE = ITEMS.register("aged_funky_cheese", () -> new Item(new Item.Properties()));
+	public static final DeferredItem<Item> MATURE_FUNKY_CHEESE = ITEMS.register("mature_funky_cheese", () -> new Item(new Item.Properties()));
 }

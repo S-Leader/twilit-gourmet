@@ -1,5 +1,6 @@
 package com.gizmo.twilightgourmet.datagen.data;
 
+import com.gizmo.twilightgourmet.datagen.helpers.CheeseAgingRecipeBuilder;
 import com.gizmo.twilitgourmet.TwilitGourmet;
 import com.gizmo.twilitgourmet.init.GourmetBlocks;
 import com.gizmo.twilitgourmet.init.GourmetItems;
@@ -9,6 +10,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponentPredicate;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.sounds.SoundEvents;
@@ -464,6 +466,41 @@ public class RecipeGenerator extends RecipeProvider {
 				.requires(CommonTags.Items.CROPS_ONION)
 				.unlockedBy("has_meef_patty", has(GourmetItems.MEEF_PATTY))
 				.save(output, TwilitGourmet.prefix("compat/meef_hamburger"));
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.PRESSED_CHEESE, GourmetItems.YOUNG_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.PRESSED_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.YOUNG_CHEESE, GourmetItems.AGED_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.YOUNG_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.AGED_CHEESE, GourmetItems.MATURE_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.AGED_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.YOUNG_SMOKED_CHEESE, GourmetItems.AGED_SMOKED_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.YOUNG_SMOKED_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.AGED_SMOKED_CHEESE, GourmetItems.MATURE_SMOKED_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.AGED_SMOKED_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.YOUNG_FUNKY_CHEESE, GourmetItems.AGED_FUNKY_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.YOUNG_FUNKY_CHEESE))
+				.save(output);
+
+		CheeseAgingRecipeBuilder.aging(GourmetItems.AGED_FUNKY_CHEESE, GourmetItems.MATURE_FUNKY_CHEESE, 10)
+				.withRottingCriteria(GourmetItems.ROTTEN_CHEESE, 1, true, registries.lookupOrThrow(Registries.BLOCK).getOrThrow(TwilitGourmet.DIRTY_BLOCKS))
+				.unlockedBy("has_cheese", has(GourmetItems.AGED_FUNKY_CHEESE))
+				.save(output);
 	}
 
 	private static void salvagePlankFromFurniture(RecipeOutput output, String woodType, ItemLike plank, ItemLike... furniture) {

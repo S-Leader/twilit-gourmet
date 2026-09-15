@@ -67,6 +67,18 @@ public class LangGenerator extends LanguageProvider {
 		this.addItem(GourmetItems.SAUTEED_FIDDLEHEAD, "Sautéed Fiddlehead");
 		this.addItem(GourmetItems.IRONWOOD_FIDDLEHEAD, "Ironwood Fiddlehead");
 
+		this.addItem(GourmetItems.PRESSED_CHEESE, "Pressed Cheese");
+		this.addItem(GourmetItems.ROTTEN_CHEESE, "Rotten Cheese");
+		this.addItem(GourmetItems.YOUNG_CHEESE, "Young Cheese");
+		this.addItem(GourmetItems.AGED_CHEESE, "Aged Cheese");
+		this.addItem(GourmetItems.MATURE_CHEESE, "Mature Cheese");
+		this.addItem(GourmetItems.YOUNG_SMOKED_CHEESE, "Young Smoked Cheese");
+		this.addItem(GourmetItems.AGED_SMOKED_CHEESE, "Aged Smoked Cheese");
+		this.addItem(GourmetItems.MATURE_SMOKED_CHEESE, "Mature Smoked Cheese");
+		this.addItem(GourmetItems.YOUNG_FUNKY_CHEESE, "Young Funky Cheese");
+		this.addItem(GourmetItems.AGED_FUNKY_CHEESE, "Aged Funky Cheese");
+		this.addItem(GourmetItems.MATURE_FUNKY_CHEESE, "Mature Funky Cheese");
+
 		this.addItem(GourmetItems.PANCAKE, "Pancake");
 		this.addItem(GourmetItems.GROUND_VENISON, "Ground Venison");
 		this.addItem(GourmetItems.VENISON_PATTY, "Venison Patty");

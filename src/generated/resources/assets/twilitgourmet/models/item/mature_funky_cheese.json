@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "twilitgourmet:item/mature_funky_cheese"
+  }
+}

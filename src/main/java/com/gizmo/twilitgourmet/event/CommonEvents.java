@@ -3,6 +3,7 @@ package com.gizmo.twilitgourmet.event;
 import com.gizmo.twilitgourmet.Syrup;
 import com.gizmo.twilitgourmet.TwilitGourmet;
 import com.gizmo.twilitgourmet.init.GourmetBlocks;
+import com.gizmo.twilitgourmet.init.GourmetDataMaps;
 import com.gizmo.twilitgourmet.init.GourmetItems;
 import net.minecraft.network.protocol.game.ClientboundAnimatePacket;
 import net.minecraft.server.level.ServerLevel;
@@ -21,7 +22,10 @@ import vectorwing.farmersdelight.common.registry.ModBlockEntityTypes;
 public class CommonEvents {
 
 	public static void register(IEventBus bus) {
-		bus.addListener(RegisterDataMapTypesEvent.class, event -> event.register(TwilitGourmet.SYRUP_DATA_MAP));
+		bus.addListener(RegisterDataMapTypesEvent.class, event -> {
+			event.register(GourmetDataMaps.SYRUP);
+			event.register(GourmetDataMaps.DRYING_RACK_SMOKING);
+		});
 		bus.addListener(DataPackRegistryEvent.NewRegistry.class, event -> event.dataPackRegistry(TwilitGourmet.SYRUP_KEY, Syrup.CODEC, Syrup.CODEC));
 		bus.addListener(BlockEntityTypeAddBlocksEvent.class, event -> event.modify(ModBlockEntityTypes.CABINET.get(),
 				GourmetBlocks.TWILIGHT_OAK_CABINET.get(),

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "#minecraft:nylium",
+    "#neoforge:villager_farmlands",
+    "#minecraft:soul_speed_blocks",
+    "minecraft:clay",
+    "minecraft:netherrack",
+    "minecraft:sculk",
+    "minecraft:wet_sponge",
+    "twilightforest:smoker",
+    "twilightforest:fire_jet"
+  ]
+}

@@ -81,6 +81,18 @@ public class GourmetTabs {
 				output.accept(GourmetItems.CRAB_QUICHE);
 				output.accept(GourmetItems.CRAB_QUICHE_SLICE);
 
+				output.accept(GourmetItems.PRESSED_CHEESE);
+				output.accept(GourmetItems.ROTTEN_CHEESE);
+				output.accept(GourmetItems.YOUNG_CHEESE);
+				output.accept(GourmetItems.AGED_CHEESE);
+				output.accept(GourmetItems.MATURE_CHEESE);
+				output.accept(GourmetItems.YOUNG_SMOKED_CHEESE);
+				output.accept(GourmetItems.AGED_SMOKED_CHEESE);
+				output.accept(GourmetItems.MATURE_SMOKED_CHEESE);
+				output.accept(GourmetItems.YOUNG_FUNKY_CHEESE);
+				output.accept(GourmetItems.AGED_FUNKY_CHEESE);
+				output.accept(GourmetItems.MATURE_FUNKY_CHEESE);
+
 				output.accept(GourmetBlocks.TREE_TAPPER);
 				generateSyrups(output, parameters.holders().lookupOrThrow(TwilitGourmet.SYRUP_KEY));
 			}).build());

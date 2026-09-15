@@ -4,6 +4,7 @@ import com.gizmo.twilitgourmet.Syrup;
 import com.gizmo.twilitgourmet.TwilitGourmet;
 import com.gizmo.twilitgourmet.block.entity.SyrupCauldronBlockEntity;
 import com.gizmo.twilitgourmet.init.GourmetBlocks;
+import com.gizmo.twilitgourmet.init.GourmetDataMaps;
 import com.gizmo.twilitgourmet.init.GourmetSyrups;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
@@ -83,7 +84,7 @@ public class TreeTapperBlock extends HorizontalDirectionalBlock {
 	@Nullable
 	public static ResourceKey<Syrup> getSyrup(BlockGetter getter, BlockPos pos, Direction facing) {
 		BlockState log = getter.getBlockState(pos.relative(facing.getOpposite()));
-		ResourceKey<Syrup> syrup = log.getBlock().builtInRegistryHolder().getData(TwilitGourmet.SYRUP_DATA_MAP);
+		ResourceKey<Syrup> syrup = log.getBlock().builtInRegistryHolder().getData(GourmetDataMaps.SYRUP);
 		if (syrup == null && log.is(BlockTags.LOGS)) {
 			syrup = GourmetSyrups.FALLBACK;
 		}

@@ -2,11 +2,13 @@ package com.gizmo.twilightgourmet.datagen.data;
 
 import com.gizmo.twilitgourmet.TwilitGourmet;
 import com.gizmo.twilitgourmet.init.GourmetBlocks;
+import com.gizmo.twilitgourmet.init.GourmetDataMaps;
 import com.gizmo.twilitgourmet.init.GourmetItems;
 import com.gizmo.twilitgourmet.init.GourmetSyrups;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.datamaps.builtin.Compostable;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
@@ -41,7 +43,7 @@ public class DataMapGenerator extends DataMapProvider {
 		composting.add(GourmetItems.MAZE_CHEESECAKE, new Compostable(1.0F), false);
 		composting.add(GourmetItems.CRAB_QUICHE, new Compostable(1.0F), false);
 
-		var syrups = this.builder(TwilitGourmet.SYRUP_DATA_MAP);
+		var syrups = this.builder(GourmetDataMaps.SYRUP);
 		syrups.add(BlockTags.OAK_LOGS, GourmetSyrups.OAK, false);
 		syrups.add(TFBlocks.GIANT_LOG, GourmetSyrups.OAK, false);
 		syrups.add(BlockTags.SPRUCE_LOGS, GourmetSyrups.SPRUCE, false);
@@ -62,5 +64,10 @@ public class DataMapGenerator extends DataMapProvider {
 		syrups.add(BlockTagGenerator.TRANSFORMATION_LOGS, GourmetSyrups.TRANSFORMATION, false);
 		syrups.add(BlockTagGenerator.MINING_LOGS, GourmetSyrups.MINING, false);
 		syrups.add(BlockTagGenerator.SORTING_LOGS, GourmetSyrups.SORTING, false);
+
+		var smoking = this.builder(GourmetDataMaps.DRYING_RACK_SMOKING);
+		smoking.add(GourmetItems.YOUNG_CHEESE, new ItemStack(GourmetItems.YOUNG_SMOKED_CHEESE.get()), false);
+		smoking.add(GourmetItems.AGED_CHEESE, new ItemStack(GourmetItems.AGED_SMOKED_CHEESE.get()), false);
+		smoking.add(GourmetItems.MATURE_CHEESE, new ItemStack(GourmetItems.MATURE_SMOKED_CHEESE.get()), false);
 	}
 }

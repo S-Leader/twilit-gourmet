@@ -77,6 +77,18 @@ public class ItemModelGenerator extends ItemModelProvider {
 		this.singleTex(GourmetItems.SAUTEED_FIDDLEHEAD);
 		this.singleTex(GourmetItems.IRONWOOD_FIDDLEHEAD);
 
+		this.singleTex(GourmetItems.PRESSED_CHEESE);
+		this.singleTex(GourmetItems.ROTTEN_CHEESE);
+		this.singleTex(GourmetItems.YOUNG_CHEESE);
+		this.singleTex(GourmetItems.AGED_CHEESE);
+		this.singleTex(GourmetItems.MATURE_CHEESE);
+		this.singleTex(GourmetItems.YOUNG_SMOKED_CHEESE);
+		this.singleTex(GourmetItems.AGED_SMOKED_CHEESE);
+		this.singleTex(GourmetItems.MATURE_SMOKED_CHEESE);
+		this.singleTex(GourmetItems.YOUNG_FUNKY_CHEESE);
+		this.singleTex(GourmetItems.AGED_FUNKY_CHEESE);
+		this.singleTex(GourmetItems.MATURE_FUNKY_CHEESE);
+
 		this.basicItem(GourmetBlocks.BREADCRUMBS.asItem());
 		this.basicItem(GourmetBlocks.TREE_TAPPER.asItem());
 

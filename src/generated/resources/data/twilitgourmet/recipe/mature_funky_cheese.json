@@ -1,0 +1,20 @@
+{
+  "type": "twilightforest:cheese_aging",
+  "aging_time": 12000,
+  "input": {
+    "item": "twilitgourmet:aged_funky_cheese"
+  },
+  "result": {
+    "count": 1,
+    "id": "twilitgourmet:mature_funky_cheese"
+  },
+  "rot_handler": {
+    "check_radius": 1,
+    "check_skylight": true,
+    "rot_causers": "#twilitgourmet:dirty_blocks",
+    "rots_into": {
+      "count": 1,
+      "id": "twilitgourmet:rotten_cheese"
+    }
+  }
+}

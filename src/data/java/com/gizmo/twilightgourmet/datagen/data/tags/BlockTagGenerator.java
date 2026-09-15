@@ -5,6 +5,8 @@ import com.gizmo.twilitgourmet.init.GourmetBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -21,6 +23,19 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider provider) {
+		this.tag(TwilitGourmet.DIRTY_BLOCKS)
+				.addTag(BlockTags.DIRT)
+				.addTag(BlockTags.SAND)
+				.addTag(BlockTags.NYLIUM)
+				.addTag(Tags.Blocks.VILLAGER_FARMLANDS)
+				.addTag(BlockTags.SOUL_SPEED_BLOCKS)
+				.add(Blocks.CLAY,
+						Blocks.NETHERRACK,
+						Blocks.SCULK,
+						Blocks.WET_SPONGE,
+						TFBlocks.SMOKER.get(),
+						TFBlocks.FIRE_JET.get());
+
 		//vanilla tags
 		this.tag(BlockTags.MINEABLE_WITH_AXE).add(
 				GourmetBlocks.TWILIGHT_OAK_CABINET.get(),
