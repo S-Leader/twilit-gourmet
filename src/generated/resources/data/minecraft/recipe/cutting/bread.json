@@ -2,7 +2,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "twilightforest:stale_bread"
+      "item": "minecraft:bread"
     }
   ],
   "result": [

@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-14T18:27:26.093794389	Recipes
+// 1.21.1	2026-09-16T05:35:38.261735008	Recipes
 bdf4c4581a3355595e7111d200949e6527c51b39 data/farmersdelight/recipe/cutting/canopy_log.json
 5349a20a7d41bdb802466dc073459e1e783a9d77 data/farmersdelight/recipe/cutting/canopy_wood.json
 57f863af656e2b8bdab93c734a77d506f9078906 data/farmersdelight/recipe/cutting/dark_log.json
@@ -15,6 +15,7 @@ f71a6b9517e8da3425dac1e585dc881b30357519 data/farmersdelight/recipe/cutting/time
 547fb3432ae41035f9dfda8b9de3f2598b09565b data/farmersdelight/recipe/cutting/transformation_wood.json
 91ef10d34f6c0f8715e29b98aea40d8436ce99d9 data/farmersdelight/recipe/cutting/twilight_oak_log.json
 69b925968a4ec313d6fce9c90b37ddf432eda4e2 data/farmersdelight/recipe/cutting/twilight_oak_wood.json
+3bc10f1d674f88aff7b4bb6ec62278190494f249 data/minecraft/recipe/cutting/bread.json
 e41f26677fa13173b4ac338b8f6944498334c1ee data/twilightforest/advancement/recipes/cooking/maze_wafer.json
 1b2b50d3f9af3064bbd54274d2a531b957c24ef0 data/twilightforest/advancement/recipes/cooking/shika_senbei.json
 b05d1f86775f83804c262e021969dad84df84699 data/twilightforest/recipe/cooking/maze_wafer.json
@@ -24,7 +25,6 @@ b05d1f86775f83804c262e021969dad84df84699 data/twilightforest/recipe/cooking/maze
 f5218ff782caf0444188269b314a2def963c884a data/twilightforest/recipe/cutting/moonworm.json
 fc6e7129d6789fdd486e4c4e40c8d3e8c87333fc data/twilightforest/recipe/cutting/raw_meef.json
 d6b96c66abaa678be5e7b9413db17df9a89365a3 data/twilightforest/recipe/cutting/raw_venison.json
-b03303b230b132ee58d552895f05cbd5bbb61340 data/twilightforest/recipe/cutting/stale_bread.json
 cb0034474891cfffc1e250c1099be81af2fd9863 data/twilightforest/recipe/salvaging/canopy_chest_boat.json
 224ccb7fb501fb6c9051363c9389a9c726be7983 data/twilightforest/recipe/salvaging/dark_chest_boat.json
 a8cd1e2d2160bfecaf06406e190aee1e6a3e0c8c data/twilightforest/recipe/salvaging/mangrove_chest_boat.json
