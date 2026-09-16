@@ -11,6 +11,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -27,7 +28,7 @@ public class SyrupBottleItem extends Item {
 	@Override
 	public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
 		if (stack.get(GourmetDataComponents.SYRUP) != null) {
-			level.registryAccess().registryOrThrow(TwilitGourmet.SYRUP_KEY).getOrThrow(stack.get(GourmetDataComponents.SYRUP)).effect().ifPresent(entity::addEffect);
+			level.registryAccess().registryOrThrow(TwilitGourmet.SYRUP_KEY).getOrThrow(stack.get(GourmetDataComponents.SYRUP)).effect().ifPresent(instance -> entity.addEffect(new MobEffectInstance(instance)));
 		}
 
 		return super.finishUsingItem(stack, level, entity);
